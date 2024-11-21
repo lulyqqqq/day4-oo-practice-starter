@@ -1,17 +1,9 @@
 package afs.training.oo;
 
-public class Bus {
-    private String name;
+public class Bus extends Vehicles{
 
-    private int speed;
-
-    public Bus(String name, int speed) {
-        this.name = name;
-        this.speed = speed;
+    public Bus(String name, int speed, int acceleration) {
+        super(name, speed, acceleration);
     }
 
-    public void SpeedUp() {
-        speed += 5;
-        System.out.printf("%s:speed up to %d km/h\n", name, speed);
-    }
 }
